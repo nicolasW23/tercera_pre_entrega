@@ -1,0 +1,48 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+}
+
+#contenedorProductos{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(4,25%);
+    background-color:lightgray;
+
+}
+
+.imagen {
+    width: 185px;
+    height: 160px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+.tarjetas{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+  }
+
+.contenedor_registro{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(147, 141, 141);
+  height: 200px;
+  width: 250px;
+  margin-top: 50px;
+}
+
+@media (max-width: 600px){
+    #contenedorProductos{
+      grid-template-columns: repeat(2,48%);
+      }
+}
+
+/*Inicio de @media 540 */
+@media (max-width: 540px){
+#contenedorProductos{
+  grid-template-columns: repeat(2,48%);
+  }
+}
